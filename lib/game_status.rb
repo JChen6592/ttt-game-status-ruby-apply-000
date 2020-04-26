@@ -18,9 +18,6 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   binding.pry 
-  if !(full?(board)) || draw?(board)
-    return false
-  else 
     WIN_COMBINATIONS.each do |wc|
       wi_1 = wc[0]
       wi_2 = wc[1]
