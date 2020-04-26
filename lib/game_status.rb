@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  binding.pry 
+  # binding.pry 
     WIN_COMBINATIONS.each do |wc|
       wi_1 = wc[0]
       wi_2 = wc[1]
