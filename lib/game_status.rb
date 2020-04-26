@@ -31,8 +31,6 @@ def won?(board)
       return wc 
     elsif pos_1 == "O" && pos_2 == "O" and pos_3 == "O"
       return wc 
-    else 
-      false 
     end
   end
   false 
