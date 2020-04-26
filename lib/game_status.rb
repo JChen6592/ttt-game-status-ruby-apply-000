@@ -17,6 +17,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  binding.pry 
   if !(full?(board)) || draw?(board)
     return false
   else 
