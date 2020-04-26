@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if !(full?(board)) || draw?(board)
+  if !(full?(board)) || !(draw?(board))
     return false
   else 
     WIN_COMBINATIONS.each do |wc|
