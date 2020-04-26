@@ -18,22 +18,21 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   # binding.pry 
-    WIN_COMBINATIONS.each do |wc|
-      wi_1 = wc[0]
-      wi_2 = wc[1]
-      wi_3 = wc[2]
+  WIN_COMBINATIONS.each do |wc|
+    wi_1 = wc[0]
+    wi_2 = wc[1]
+    wi_3 = wc[2]
       
-      pos_1 = board[wi_1]
-      pos_2 = board[wi_2]
-      pos_3 = board[wi_3]
+    pos_1 = board[wi_1]
+    pos_2 = board[wi_2]
+    pos_3 = board[wi_3]
       
-      if pos_1 == "X" && pos_2 == "X" && pos_3 == "X"
-        return wc 
-      elsif pos_1 == "O" && pos_2 == "O" and pos_3 == "O"
-        return wc 
-      else 
-        false 
-      end
+    if pos_1 == "X" && pos_2 == "X" && pos_3 == "X"
+      return wc 
+    elsif pos_1 == "O" && pos_2 == "O" and pos_3 == "O"
+      return wc 
+    else 
+      false 
     end
   end
 end
